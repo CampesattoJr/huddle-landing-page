@@ -1,0 +1,132 @@
+html{
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    background: url(../images/bg-desktop.svg) no-repeat center;
+    background-size: cover;
+    background-color: var(--violet);
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    justify-content: center;
+}
+
+.header{
+    grid-area: header;
+}
+
+.header .logo{
+    margin: 30px 50px;
+}
+
+.main{
+    grid-area: main;
+}
+
+.main .principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    margin: 50px;
+}
+
+.main .principal .image{
+    margin-right: 3rem;
+}
+
+.main .principal .text-information{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.main .principal .text-information .title{
+    font-size: 5rem;
+    margin-top: 4rem;
+    font-weight: 600;
+}
+
+.main .principal .text-information .text-description{
+    font-size: 2.1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.main .principal .text-information .text-button{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    width: 18rem;
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 0 8px 17px rgba(29, 24, 24, 0.596);
+    margin-bottom: 10rem;
+    color: var(--violet);
+    background-color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.main .principal .text-information .text-button:hover{
+    color: #fff;
+    background-color: var(--soft-magenta);
+    cursor: pointer;
+}
+
+.footer {
+    grid-area: social;
+    margin-top: 60px;
+}
+
+.footer .social{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    margin-right: 6rem;
+}
+
+.footer .social a{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+
+.footer .social a:hover{
+    border-color:  var(--soft-magenta);
+    color: var(--soft-magenta);
+}
+
+.footer .social a i{
+    font-size: 2rem;
+    color: #fff;
+    transition: .3s ease-in-out;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social a i:hover{
+    color: var(--soft-magenta);
+}
